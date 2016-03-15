@@ -18,3 +18,16 @@
 (def palavras #{"A" "L" "U" "R"})
 (contains? palavra "A")
 (contains? palavra "O")
+
+(map (fn[x] (- x 200.0))  (map (fn[x] (* x 20)) carros))
+
+(->> carros 
+	(map (fn [x] (* 2 x)))
+
+
+(def carros [50000.0, 60000.0])
+
+(->> carros 
+    (map (fn [x] (* x 2))) 
+    (map (fn [x] (* x 3))) 
+    (reduce (fn [acc n] (+ acc n))))
